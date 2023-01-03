@@ -15,5 +15,13 @@ Don't mutate the parameter.
 */
 
 // TODO add your code here
+function inverse(array) {
+    if (array === null) {
+        return [];
+    }
+    return array.map((number) => {
+        return number * -1;
+    });
+}
 
 module.exports = inverse;
